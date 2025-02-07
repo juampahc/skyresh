@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     LOAD_VINO: bool = Field(default=True, env="LOAD_VINO")
     LOAD_TOKENIZER: bool = Field(default=True, env="LOAD_TOKENIZER")
     VINO_FILE: str = Field(default="model_fp16.xml", env="VINO_FILE")
+    API_INTERNAL_URL: str = Field(default="http://localhost:8080", env="API_INTERNAL_URL")
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 

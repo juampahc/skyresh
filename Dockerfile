@@ -15,9 +15,12 @@ WORKDIR /skyresh/
 RUN pip install --no-cache-dir -r requirements.txt && rm requirements.txt
 
 # Expose the port
+# - 8080 FastAPI
+# - 7860 Gradio
 EXPOSE 8080
+EXPOSE 7860
 
 # Launch Uvicorn
 # uvicorn application:app --host 0.0.0.0 --port 8080 --log-level info
 # CMD ["sleep", "infinity"]
-CMD ["uvicorn", "application:app", "--host", "0.0.0.0", "--port", "8080", "--log-level", "info"]
+CMD ["bash", "start-services.sh"]
