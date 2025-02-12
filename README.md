@@ -20,7 +20,30 @@ This repo contains the code for both containerization and deployment of a [GLiNE
 
 ## 🛠 Getting Started
 
-The application exposes both a gradio front-end and a REST-API.
+The application exposes both a gradio front-end and a REST-API. You can just pull the image to start working with it:
+
+```bash
+docker run --rm --name gliner-vino -p 8080:8080 -p 7860:7860 -it juampahc/skyresh:latest
+```
+
+The container does not contain any model, you need to specify the configuration by either:
+
+- using environment variables
+- providing an .env file that should be mounted in directory `skyresh/.env`
+
+The application will load default configuration when not provided. Please note that variables present in configuration file will override those passed by environment variables.
+
+For more info about the endpoints check the swagger documentation exposed in `http://localhost:8080/docs`
+
+The gradio front-end allows changing the model by using a different one from huggingface such as `urchade/gliner_multi-v2.1`.
+
+If downloading is not an option for you, you can always mount a repository of models and treat model ID  as model path.
+
+When using this model in production, you need to pass the header 'access_token' (nginx for example). Default API-KEY is `helloworld`.
+
+Examples coming soon!
+
+...
 
 ### Docker
 
