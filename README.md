@@ -2,6 +2,7 @@
 
 This repo contains the code for both containerization and deployment of a [GLiNER model](https://github.com/urchade/GLiNER) using [OpenVINO](https://docs.openvino.ai/), it is part of a larger personal project. 
 
+**IMPORTANT**: Full compatibility is not guaranteed for different span modes such as `token_level`.
 
 
 #### Project Status: Active [WIP]
