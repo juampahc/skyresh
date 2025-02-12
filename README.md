@@ -20,7 +20,7 @@ This repo contains the code for both containerization and deployment of a [GLiNE
 
 ## 🛠 Getting Started
 
-
+The application exposes both a gradio front-end and a REST-API.
 
 ### Docker
 
