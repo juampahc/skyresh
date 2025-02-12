@@ -45,12 +45,6 @@ Examples coming soon!
 
 ...
 
-### Docker
-
-The image of this project is already 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
 
 ## 👨‍💻 Model Authors
 The original model authors are:
